@@ -1,18 +1,217 @@
-/* Error: Undefined variable.
- *    ,
- * 40 |   background: $color-surface;
- *    |               ^^^^^^^^^^^^^^
- *    '
- *   scss\_layout.scss 40:15  @use
- *   scss\main.scss 3:1       root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 40 \2502    background: $color-surface;\d\a    \2502                ^^^^^^^^^^^^^^\a    \2575 \a   scss\\_layout.scss 40:15  @use\a   scss\\main.scss 3:1       root stylesheet";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #e5e7eb;
+  background: #0b0f17;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===== Container & sections ===== */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.section {
+  padding: 32px 0;
+}
+
+/* ===== Header ===== */
+.site-header {
+  background: #111827;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #9ca3af;
+}
+.nav-link:hover {
+  color: #e5e7eb;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  color: #e5e7eb;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+/* ===== Hero ===== */
+.hero {
+  background: linear-gradient(180deg, #111827, #0b0f17);
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  padding: 32px 0;
+}
+
+.hero-title {
+  font-size: 2.75rem;
+  margin: 8px 0;
+}
+
+.hero-subtitle {
+  color: #9ca3af;
+  margin-bottom: 24px;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 12px;
+}
+
+.hero-image-placeholder {
+  background: #0f172a;
+  height: 300px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  padding: 12px 24px;
+  border-radius: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: #7c3aed;
+  color: #fff;
+}
+
+.btn-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e5e7eb;
+}
+
+/* ===== Products ===== */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.product-card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #111827;
+}
+.product-card .product-media {
+  background: #0f172a;
+  height: 160px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+}
+.product-card .product-category {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+.product-card .product-title {
+  font-size: 1rem;
+  margin: 0;
+}
+.product-card .product-price {
+  font-weight: 600;
+}
+.product-card .product-add {
+  margin-top: auto;
+  align-self: flex-end;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #7c3aed;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 24px 0;
+  background: #111827;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: flex;
+  gap: 16px;
+}
+
+/* ===== Mobile adaptation ===== */
+@media (max-width: 800px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+  .nav {
+    gap: 8px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
