@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Webshop</title>
+  <meta name="description" content="En enkel och professionell webshop." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="./index.html" aria-label="Webshop, start">Webshop</a>
+
+      <nav class="nav" aria-label="Huvudmeny">
+        <a class="nav-link" href="#produkter">Produkter</a>
+        <a class="nav-link" href="#kategorier">Kategorier</a>
+        <a class="nav-link" href="#om">Om oss</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" type="button" aria-label="Öppna varukorg">
+          🛒 <span class="cart-badge" aria-label="Antal i varukorg">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Hero -->
+    <section class="hero" aria-label="Hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Ny kollektion</p>
+          <h1 class="hero-title">Kvalitetsprodukter för vardagen</h1>
+          <p class="hero-subtitle">
+            Utforska våra favoriter och hitta något som passar dig.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#produkter">Se produkter</a>
+            <a class="btn btn-secondary" href="#kategorier">Utforska kategorier</a>
+          </div>
+        </div>
+
+        <div class="hero-media" aria-hidden="true">
+          <div class="hero-image-placeholder">Hero image</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section" id="produkter" aria-label="Produkter">
+      <div class="container section-head">
+        <h2 class="section-title">Populära produkter</h2>
+        <p class="section-subtitle">Ett urval av våra mest uppskattade produkter.</p>
+      </div>
+
+      <div class="container product-grid">
+        <!-- Produktkort 1 -->
+        <article class="product-card">
+          <div class="product-media">Bild</div>
+          <div class="product-body">
+            <p class="product-category">Kategori</p>
+            <h3 class="product-title">Produktnamn</h3>
+            <p class="product-price">199 kr</p>
+          </div>
+          <button class="product-add" type="button" aria-label="Lägg till i varukorg">
+            +
+          </button>
+        </article>
+
+        <!-- Produktkort 2 -->
+        <article class="product-card">
+          <div class="product-media">Bild</div>
+          <div class="product-body">
+            <p class="product-category">Kategori</p>
+            <h3 class="product-title">Produktnamn</h3>
+            <p class="product-price">249 kr</p>
+          </div>
+          <button class="product-add" type="button" aria-label="Lägg till i varukorg">
+            +
+          </button>
+        </article>
+
+        <!-- Produktkort 3 -->
+        <article class="product-card">
+          <div class="product-media">Bild</div>
+          <div class="product-body">
+            <p class="product-category">Kategori</p>
+            <h3 class="product-title">Produktnamn</h3>
+            <p class="product-price">299 kr</p>
+          </div>
+          <button class="product-add" type="button" aria-label="Lägg till i varukorg">
+            +
+          </button>
+        </article>
+
+        <!-- Produktkort 4 -->
+        <article class="product-card">
+          <div class="product-media">Bild</div>
+          <div class="product-body">
+            <p class="product-category">Kategori</p>
+            <h3 class="product-title">Produktnamn</h3>
+            <p class="product-price">349 kr</p>
+          </div>
+          <button class="product-add" type="button" aria-label="Lägg till i varukorg">
+            +
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section" id="kategorier" aria-label="Kategorier">
+      <div class="container section-head">
+        <h2 class="section-title">Kategorier</h2>
+        <p class="section-subtitle">Hitta rätt snabbare via kategorier.</p>
+      </div>
+
+      <div class="container category-grid">
+        <a class="category-card" href="#produkter">Accessoarer</a>
+        <a class="category-card" href="#produkter">Kläder</a>
+        <a class="category-card" href="#produkter">Hem</a>
+        <a class="category-card" href="#produkter">Present</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="om" aria-label="Om oss">
+      <div class="container about">
+        <h2 class="section-title">Om oss</h2>
+        <p class="section-subtitle">
+          Vi bygger en enkel webshop som gruppprojekt med fokus på struktur, design och funktion.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">© <span id="year">2026</span> Webshop</p>
+
+      <div class="footer-links" aria-label="Footer-länkar">
+        <a href="#" aria-label="Om oss">Om oss</a>
+        <a href="#" aria-label="Kundtjänst">Kundtjänst</a>
+        <a href="#" aria-label="Sociala medier">Sociala medier</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
